@@ -1,0 +1,28 @@
+/* universal selector */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* h1{
+    color: blueviolet;
+}
+p{
+    color: red;
+} */
+/* class selector */
+.pra{
+    color: orange;
+}
+
+.hello{
+    font-size: 60px;
+}
+/* id selector */
+#id1{
+    color: brown;
+    background-color: blue;
+}
+/* selector list */
+.class1, .class7, .class10{
+    
+}

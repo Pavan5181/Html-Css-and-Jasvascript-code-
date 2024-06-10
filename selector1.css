@@ -1,0 +1,25 @@
+/* decented slector only selector selector part execution is done */
+/* main p{
+    color: red;
+} */
+/* child sel */
+/* in  between h1 is p then it will work */
+h1 > p{
+    color: orange;
+ }
+ /*<!-- under section use child selector --> */
+ /* section + P{
+    color: burlywood;
+}   */
+
+ section ~ P{
+    color: burlywood;
+} 
+/* Attribute selector */
+[target="_blank"]{
+    color: pink;
+    text-decoration: dotted;
+}
+[alt="pw1"]{
+    color: aqua;
+}

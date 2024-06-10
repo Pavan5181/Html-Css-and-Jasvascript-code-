@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        .container {
+            display: grid;
+            height: 700px;
+            /* if you will not given height then album  is not visible */
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+        }
+        .box{
+            /* height: 100px;
+            width: 100px; */
+        }
+        .box1 {
+            background-color: red;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        .box2 {
+            background-color: green;
+        }
+        .box3 {
+            background-color: yellow;
+        }
+        .box4 {
+            background-color: pink;
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+        .box5 {
+            background-color: brown;
+        }
+        .box6 {
+            background-color: purple;
+        }
+        .box7 {
+            background-color: violet;
+        }
+        .box8 {
+            background-color: yellowgreen;
+        }
+        .box9 {
+            background-color: magenta;
+        }
+    </style>
+</head>
+<body>
+    <!-- Grid albbum -->
+    <!-- div.container>div.box.box1*9 -->
+    <div class="container">
+        <div class="box box1"><img src="" alt=""></div>
+        <div class="box box2"><img src="" alt=""></div>
+        <div class="box box3"><img src="" alt=""></div>
+        <div class="box box4"><img src="" alt=""></div>
+        <div class="box box5"><img src="" alt=""></div>
+        <div class="box box6"><img src="" alt=""></div>
+        <div class="box box7"><img src="" alt=""></div>
+        <div class="box box8"><img src="" alt=""></div>
+        <div class="box box9"><img src="" alt=""></div>
+    </div>
+
+</body>
+</html>

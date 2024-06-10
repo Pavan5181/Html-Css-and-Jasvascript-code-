@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user registration form</title>
+</head>
+<body>
+    <form method="get" target="blank">
+        <!-- get and post two method we can use -->
+        <!-- learn attribute from google -->
+        <fieldset>
+            <legend>user registration!!</legend>
+        <label for="username">Enter your username</label>
+        <input type="text" id="username" name="username" value="pavan" readonly disabled >
+        <!-- readonly disabled to fix value  you can notwritten any thing-->
+        <br>
+        <label for="usermail">Enter your mail</label>
+        <input type="email" name="usermail" id="useremail" placeholder="a@example.com" autofocus>
+        <!-- placeholder is used get hint to hint -->
+        <!-- focus used focusing hint -->
+        <br>
+        <label for="userpassword">Enter your userpassword</label>
+        <input type="password" id="userpassword" name="userpassword">
+        <br>
+        select gender:
+        <br>
+        <label for="male">male</label>
+        <input type="radio" name="gender" id="male" value="male" >
+        <!-- values are imp  -->
+        
+       
+        <label for="female">female</label>
+        <input type="radio" name="gender" id="female" value="female">
+        
+        <label for="transgender">transgender</label>
+        <input type="radio" name="gender" id="transgender" values="transgender">
+        <br>
+        <input type="number" min="7" max="11" >
+        <input type="submit" values="submit form">
+    </fieldset>
+    </form>
+</body>
+</html>

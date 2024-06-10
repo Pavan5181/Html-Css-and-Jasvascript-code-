@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>online shoping System</title>
+    <style>
+         body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container {
+            width: 300px;
+            margin: 0 auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="email" id="loginEmail" placeholder="Email" required><br><br>
+            <input type="password" id="loginPassword" placeholder="Password" required><br><br>
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="#" onclick="showSignup()">Sign Up</a></p>
+    </div>
+
+    <div class="container" id="signupContainer" style="display: none;">
+        <h2>Sign Up</h2>
+        <form id="signupForm">
+            <input type="text" id="signupName" placeholder="Full Name" required><br><br>
+            <input type="email" id="signupEmail" placeholder="Email" required><br><br>
+            <input type="password" id="signupPassword" placeholder="Password" required><br><br>
+            <button type="submit">Sign Up</button>
+        </form>
+        <p>Already have an account? <a href="#" onclick="showLogin()">Login</a></p>
+    </div>
+
+    <script>
+        function showSignup() {
+            document.getElementById('loginForm').style.display = 'none';
+            document.getElementById('signupContainer').style.display = 'block';
+        }
+
+        function showLogin() {
+            document.getElementById('loginForm').style.display = 'block';
+            document.getElementById('signupContainer').style.display = 'none';
+        }
+
+        document.getElementById('loginForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            // Implement login functionality here
+            alert('Login form submitted');
+        });
+
+        document.getElementById('signupForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            // Implement sign-up functionality here
+            alert('Sign-up form submitted');
+        });
+    </script>
+</body>
+</html>

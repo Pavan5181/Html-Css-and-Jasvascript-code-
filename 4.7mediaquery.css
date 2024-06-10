@@ -1,0 +1,56 @@
+body {
+    background-color: red;
+
+}
+div {
+    font-size: x-large;
+    text-align: center;
+}
+
+div::after {
+    content: 'welcome to the demo'
+}
+@media(min-width: 400px) {
+    /* if view port is at least 900px then this 
+    style will apply */
+    body {
+        background-color: yellowgreen;
+    }
+    div::after {
+        content: ' 1st'
+    }
+}
+@media(min-width:500px) and (max-width:768px) {
+    /* if view port is at least 768px then this 
+    style will apply */
+    body {
+        background-color: orange;
+    }
+    div::after {
+        content: ' 2nd very smaller screen'
+    }
+}
+@media(min-width:768px) and (max-width:900px) {
+/* @media (768px ≤ width ≤ 900px) { */
+       
+    /* if view port is at least 900px then this 
+    style will apply */
+    body {
+        background-color:green;
+    }
+    div::after {
+        content: ' 3rd smaller screen'
+    }
+}
+@media(min-width:900px) {
+    /* if vieewport is atleast 900px
+    then this style  will apply */
+    body {
+        background-color: aquamarine;
+    }
+    div::after {
+        content: '4th wow its working'
+    }
+}
+
+

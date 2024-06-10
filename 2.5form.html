@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form Demo</title>
+   
+</head>
+<body>
+    <!-- fieldset is for to come big box of four side of box -->
+    <!-- in the lable for is imp  -->
+    <!-- textarea is used to increase or decrease size of table -->
+    <!-- input is imp -->
+    <form method="get">
+        <fieldset>
+        <label for="name">Enter your name</label>
+        <input type="text" id="name" name="username">
+        <br>
+        <label for="address">please enter your address</label>
+        <textarea name="useraddress" id="address" cols="30" rows="10"></textarea>
+        <br>
+        <label for="dob">DOB:</label>
+        <input type="date" id="dob" name="userdob">
+        <br>
+        <label for="password">Enter your password</label>
+        <input type="password" id="password" name="userpassword">
+        <br>
+        select gender:
+        <br>
+        <label for="male">male</label>
+        <input type="radio" name="gender" id="male" >
+        
+       
+        <label for="female">female</label>
+        <input type="radio" name="gender" id="female">
+        
+        <label for="transgender">transgender</label>
+        <input type="radio" name="gender" id="transgender">
+        <br>
+
+        Select favorite movies:
+        <br>
+        <label for="avenger">avenger</label>
+        <input type="checkbox" name="avenger" id="avenger">
+        <br>
+        <label for="chotabheem">chotabheem</label>
+        <input type="checkbox" name="chotabheem" id="chotabheem">
+        <br>
+        <label for="spiderman">spiderman</label>
+        <input type="checkbox" name="spiderman" id="spiderman">
+        <br>
+        <input type="submit" values="submit form">
+    </fieldset>
+    </form>
+</body>
+</html>
